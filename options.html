@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pure CSS Table Highlight (vertical &amp; horizontal)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- <script type="options.js"></script> -->
+<script type="text/javascript" src="options.js"></script>
+<!-- partial:index.partial.html -->
+<div class="header">
+  <h1>Website Automata</h1>
+  <p>Reloader by Surya</p>
+</div>
+<div class="container">
+	<div class="entry">
+		<label>HostURL:</label>
+		<input class="inputhost" id="hosturl">
+		<label>Reload Count:</label>
+		<input class="reloadcount" id="count" type="number" min="1" step="1" value="10">
+
+		<label class="inputcontainer" >Wait to Load
+		  <input type="checkbox" id="waitcheck">
+		  <span class="checkmark"></span>
+		</label>
+
+		<button class="buttongreen" id="addentry" >Add Entry</button>
+		</button>
+	</div>
+	<table>
+		<thead>
+
+			<tr>
+				<th>Site Name</th>
+				<th>Reload Count</th>
+				<th>Wait</th>
+				<th>Delete</th>
+				<th>Start</th>
+			</tr>
+
+		</thead>
+		<tbody id='table_body'>
+		</tbody>
+	</table>
+
+	<div class="entry">
+	<button class="buttongreen" id="launchall" >Launch All</button>
+	<label class="rapidlbl">Rapid Count:</label>
+	<input class="rapidcount" id="rapidcount" type="number" min="150" step="20" value="150">
+</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
